@@ -1,6 +1,7 @@
 # Book settings - https://jupyterbook.org/customize/config.html
 title: OpenLambda
 author: OpenLambda
+logo: _static/open-lambda.png
 
 # Force re-execution of notebooks on each build
 execute:

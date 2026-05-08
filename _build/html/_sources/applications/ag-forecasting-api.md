@@ -1,6 +1,7 @@
 # 🌾 Agricultural Forecasting API
 
-FastAPI-based ASGI service for crop disease risk forecasting using multi-source weather data, developed by the University of Wisconsin–Madison Data Science Institute and integrated with Open-Lambda technology.
+FastAPI-based service for **crop disease risk forecasting** and **winter rye biomass estimation** using multi-source weather data.  
+Developed by the University of Wisconsin–Madison Data Science Institute.
 
 ---
 
@@ -11,7 +12,7 @@ The API provides geospatial agricultural intelligence for Wisconsin, combining w
 ### Key Features
 - 🌽 Crop disease risk forecasting (corn & soybean)
 - 🌱 Winter rye biomass estimation
-- 🌦 Multi-source weather integration (IBM EIS, WiscoNet)
+- 🌦 Multi-source weather integration (IBM EIS, WiscoNet, NOAA)
 - 📍 Coordinate and station-based queries
 - 🗺 GeoJSON outputs for GIS applications
 - ⚡ Async batch processing for multi-station analysis
@@ -132,7 +133,7 @@ All outputs are returned as **GeoJSON FeatureCollections**, including:
 ## Setup
 
 ```bash
-git clone https://github.com/UW-Madison-DSI/ag_forecasting_api.git
+git clone <repo>
 cd ag_forecasting_api
 
 python -m venv .venv
