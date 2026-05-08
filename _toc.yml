@@ -5,3 +5,7 @@ format: jb-book
 root: index
 chapters:
   - file: worker
+  - file: applications/index
+    title: Applications
+    sections:
+      - file: applications/ag-forecasting-api
