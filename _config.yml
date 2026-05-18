@@ -43,6 +43,8 @@ parse:
 
 # Sphinx configuration
 sphinx:
+  extra_extensions:
+    - ablog
   config:
     html_theme: "sphinx_book_theme"
     html_show_sourcelink: false
@@ -55,3 +57,33 @@ sphinx:
       show_navbar_depth: 1
       logo:
         text: "OpenLambda"
+
+    # ---- ABlog config ----
+    blog_path: "blog"
+    blog_title: "OpenLambda Blog"
+    blog_baseurl: "https://open-lambda.github.io/"
+    blog_authors:
+      open-lambda:
+        - "OpenLambda Team"
+        - "https://open-lambda.org"
+    blog_default_author: open-lambda
+    blog_feed_archives: true
+    post_date_format: "%Y-%m-%d"
+    post_auto_image: 1
+    post_auto_excerpt: 2
+    fontawesome_included: true
+
+    # Show ABlog widgets on blog pages only
+    html_sidebars:
+      blog/**:
+        - ablog/postcard.html
+        - ablog/recentposts.html
+        - ablog/tagcloud.html
+        - ablog/categories.html
+        - ablog/archives.html
+      blog:
+        - ablog/postcard.html
+        - ablog/recentposts.html
+        - ablog/tagcloud.html
+        - ablog/categories.html
+        - ablog/archives.html

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>🌾 Agricultural Forecasting API &#8212; OpenLambda</title>
+    <title>Agricultural Forecasting API &#8212; OpenLambda</title>
   
   
   
@@ -60,9 +60,16 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'applications/ag-forecasting-api';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Applications" href="index.html" />
+    <link rel="prev" title="Applications" href="index.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="en"/> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../blog/atom.xml"
+  title="OpenLambda Blog"
+/>
+  
   </head>
   
   
@@ -174,8 +181,11 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../worker.html">Worker</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../blog/index.html">Blog</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Applications</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">🌾 Agricultural Forecasting API</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Agricultural Forecasting API</a></li>
 </ul>
 </details></li>
 </ul>
@@ -315,7 +325,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>🌾 Agricultural Forecasting API</h1>
+    <h1>Agricultural Forecasting API</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -325,31 +335,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features">Key Features</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-architecture">System Architecture</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-modules">Core Modules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-endpoints">API Endpoints</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm-forecasting-coordinates">IBM Forecasting (Coordinates)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wisconet-forecasting-stations">WiscoNet Forecasting (Stations)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-metadata">Model Metadata</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disease-models">Disease Models</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#winter-rye-biomass-model">Winter Rye Biomass Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sources">Data Sources</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm-environmental-intelligence-suite-eis">IBM Environmental Intelligence Suite (EIS)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wisconet">WiscoNet</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#response-format">Response Format</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-features">Performance Features</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 </ul>
             </nav>
         </div>
@@ -360,162 +346,15 @@ document.write(`
                 
 <div id="searchbox"></div>
                 <article class="bd-article">
-                  
-  <section class="tex2jax_ignore mathjax_ignore" id="agricultural-forecasting-api">
-<h1>🌾 Agricultural Forecasting API<a class="headerlink" href="#agricultural-forecasting-api" title="Link to this heading">#</a></h1>
-<p>FastAPI-based service for <strong>crop disease risk forecasting</strong> and <strong>winter rye biomass estimation</strong> using multi-source weather data.<br />
-Developed by the University of Wisconsin–Madison Data Science Institute.</p>
+                   <section class="tex2jax_ignore mathjax_ignore" id="agricultural-forecasting-api">
+<h1>Agricultural Forecasting API<a class="headerlink" href="#agricultural-forecasting-api" title="Link to this heading">#</a></h1>
+<p>FastAPI-based ASGI service for crop disease risk forecasting using multi-source weather data, developed by the University of Wisconsin–Madison Data Science Institute and integrated with Open-Lambda technology.</p>
 <hr class="docutils" />
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>The API provides geospatial agricultural intelligence for Wisconsin, combining weather data with validated agronomic models.</p>
-<section id="key-features">
-<h3>Key Features<a class="headerlink" href="#key-features" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>🌽 Crop disease risk forecasting (corn &amp; soybean)</p></li>
-<li><p>🌱 Winter rye biomass estimation</p></li>
-<li><p>🌦 Multi-source weather integration (IBM EIS, WiscoNet, NOAA)</p></li>
-<li><p>📍 Coordinate and station-based queries</p></li>
-<li><p>🗺 GeoJSON outputs for GIS applications</p></li>
-<li><p>⚡ Async batch processing for multi-station analysis</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="system-architecture">
-<h2>System Architecture<a class="headerlink" href="#system-architecture" title="Link to this heading">#</a></h2>
-<p>The system is structured into four main layers:</p>
-<ul class="simple">
-<li><p><strong>API Layer (FastAPI)</strong><br />
-Handles incoming requests and routing (<code class="docutils literal notranslate"><span class="pre">/ibm</span></code>, <code class="docutils literal notranslate"><span class="pre">/wisconet_g</span></code>, <code class="docutils literal notranslate"><span class="pre">/models</span></code>)</p></li>
-<li><p><strong>Data Layer</strong></p>
-<ul>
-<li><p>IBM EIS: high-resolution global weather API</p></li>
-<li><p>WiscoNet: Wisconsin mesonet station network</p></li>
-</ul>
-</li>
-<li><p><strong>Processing Layer</strong><br />
-Weather normalization, unit conversion, GDD calculation, rolling features</p></li>
-<li><p><strong>Model Layer</strong><br />
-Disease risk models and winter rye biomass model</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="core-modules">
-<h2>Core Modules<a class="headerlink" href="#core-modules" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Weather ingestion (IBM + WiscoNet)</p></li>
-<li><p>Disease risk modeling</p></li>
-<li><p>Winter rye biomass estimation</p></li>
-<li><p>Async pipeline orchestration</p></li>
-<li><p>GeoJSON response formatting</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="api-endpoints">
-<h2>API Endpoints<a class="headerlink" href="#api-endpoints" title="Link to this heading">#</a></h2>
-<section id="ibm-forecasting-coordinates">
-<h3>IBM Forecasting (Coordinates)<a class="headerlink" href="#ibm-forecasting-coordinates" title="Link to this heading">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/v2/ag_models_wrappers/ibm</span></code></p>
-<p>Returns disease risk + biomass using IBM weather data.</p>
-</section>
-<hr class="docutils" />
-<section id="wisconet-forecasting-stations">
-<h3>WiscoNet Forecasting (Stations)<a class="headerlink" href="#wisconet-forecasting-stations" title="Link to this heading">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/v2/ag_models_wrappers/wisconet_g</span></code></p>
-<p>Returns station-based time-series disease risk and biomass.</p>
-</section>
-<hr class="docutils" />
-<section id="model-metadata">
-<h3>Model Metadata<a class="headerlink" href="#model-metadata" title="Link to this heading">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">GET</span> <span class="pre">/v2/ag_models_wrappers/models</span></code></p>
-<p>Returns available disease and biomass models.</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="disease-models">
-<h2>Disease Models<a class="headerlink" href="#disease-models" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Tarspot (corn)</strong> – humidity and temperature-based risk</p></li>
-<li><p><strong>Gray Leaf Spot (corn)</strong> – temperature + dew point model</p></li>
-<li><p><strong>Frogeye Leaf Spot (soybean)</strong> – GDD + rainfall model</p></li>
-<li><p><strong>White Mold (soybean)</strong> – precipitation and soil moisture model</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="winter-rye-biomass-model">
-<h2>Winter Rye Biomass Model<a class="headerlink" href="#winter-rye-biomass-model" title="Link to this heading">#</a></h2>
-<p>Predicts dry biomass (lb/acre) using:</p>
-<ul class="simple">
-<li><p>Growing Degree Days (0°C base)</p></li>
-<li><p>Planting date (day-of-year)</p></li>
-<li><p>Fall precipitation</p></li>
-<li><p>Logistic growth curve</p></li>
-</ul>
-<section id="outputs">
-<h3>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Biomass (lb/acre)</p></li>
-<li><p>Color class (gray / yellow / green)</p></li>
-<li><p>Interpretation message</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="data-sources">
-<h2>Data Sources<a class="headerlink" href="#data-sources" title="Link to this heading">#</a></h2>
-<section id="ibm-environmental-intelligence-suite-eis">
-<h3>IBM Environmental Intelligence Suite (EIS)<a class="headerlink" href="#ibm-environmental-intelligence-suite-eis" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>High-resolution global weather data</p></li>
-<li><p>Hourly forecasts and historical data</p></li>
-<li><p>Requires authentication</p></li>
-</ul>
-</section>
-<section id="wisconet">
-<h3>WiscoNet<a class="headerlink" href="#wisconet" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Wisconsin mesonet (~100 stations)</p></li>
-<li><p>Daily weather observations</p></li>
-<li><p>Public API access</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="response-format">
-<h2>Response Format<a class="headerlink" href="#response-format" title="Link to this heading">#</a></h2>
-<p>All outputs are returned as <strong>GeoJSON FeatureCollections</strong>, including:</p>
-<ul class="simple">
-<li><p>Weather variables</p></li>
-<li><p>Disease risk scores</p></li>
-<li><p>Biomass predictions</p></li>
-<li><p>Station metadata</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="performance-features">
-<h2>Performance Features<a class="headerlink" href="#performance-features" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Async multi-station processing</p></li>
-<li><p>Cached weather and station data (6h–7d TTL)</p></li>
-<li><p>Parallel risk computation</p></li>
-<li><p>Optimized data aggregation pipeline</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="setup">
-<h2>Setup<a class="headerlink" href="#setup" title="Link to this heading">#</a></h2>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>&lt;repo&gt;
-<span class="nb">cd</span><span class="w"> </span>ag_forecasting_api
-
-python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
-<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
-
-pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-
-uvicorn<span class="w"> </span>app:app<span class="w"> </span>--reload
-</pre></div>
-</div>
+<p>The API provides geospatial agricultural intelligence for Wisconsin, combining weather data with validated crop disease forecasting models.
+The tool is now entering its next phase through integration with OpenLambda technology.
+For reference, please check the documentation <a class="reference external" href="https://github.com/UW-Madison-DSI/ag_forecasting_api.git">here</a>.</p>
 </section>
 </section>
 
@@ -538,6 +377,9 @@ uvicorn<span class="w"> </span>app:app<span class="w"> </span>--reload
     }
     </script>
     <script>kernelName = 'python3'</script>
+<div class="section ablog__blog_comments">
+   
+</div>
 
                 </article>
               
@@ -574,31 +416,7 @@ uvicorn<span class="w"> </span>app:app<span class="w"> </span>--reload
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features">Key Features</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-architecture">System Architecture</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-modules">Core Modules</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#api-endpoints">API Endpoints</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm-forecasting-coordinates">IBM Forecasting (Coordinates)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wisconet-forecasting-stations">WiscoNet Forecasting (Stations)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-metadata">Model Metadata</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disease-models">Disease Models</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#winter-rye-biomass-model">Winter Rye Biomass Model</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-sources">Data Sources</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ibm-environmental-intelligence-suite-eis">IBM Environmental Intelligence Suite (EIS)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wisconet">WiscoNet</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#response-format">Response Format</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-features">Performance Features</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setup">Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
 </ul>
   </nav></div>
 
