@@ -9,3 +9,7 @@ chapters:
     title: Applications
     sections:
       - file: applications/ag-forecasting-api
+  - file: blog/index
+    title: Blog
+    sections:
+      - glob: blog/posts/*

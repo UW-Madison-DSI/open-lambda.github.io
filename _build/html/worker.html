@@ -60,10 +60,17 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'worker';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Applications" href="applications/index.html" />
-    <link rel="prev" title="OpenLambda" href="index.html" />
+    <link rel="next" title="OpenLambda Blog" href="blog/index.html" />
+    <link rel="prev" title="OpenLambda" href="index.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="en"/> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="blog/atom.xml"
+  title="OpenLambda Blog"
+/>
+  
   </head>
   
   
@@ -175,8 +182,11 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Worker</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="blog/index.html">Blog</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="applications/index.html">Applications</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="applications/ag-forecasting-api.html">🌾 Agricultural Forecasting API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications/ag-forecasting-api.html">Agricultural Forecasting API</a></li>
 </ul>
 </details></li>
 </ul>
@@ -341,8 +351,7 @@ document.write(`
                 
 <div id="searchbox"></div>
                 <article class="bd-article">
-                  
-  <section class="tex2jax_ignore mathjax_ignore" id="worker">
+                   <section class="tex2jax_ignore mathjax_ignore" id="worker">
 <h1>Worker<a class="headerlink" href="#worker" title="Link to this heading">#</a></h1>
 <p>The OpenLambda <strong>worker</strong> is the core server-side component of a node. It listens for
 incoming HTTP requests, manages container lifecycle, and returns responses to callers.</p>
@@ -444,6 +453,9 @@ multi-node setups.</p>
     }
     </script>
     <script>kernelName = 'python3'</script>
+<div class="section ablog__blog_comments">
+   
+</div>
 
                 </article>
               
@@ -465,11 +477,11 @@ multi-node setups.</p>
       </div>
     </a>
     <a class="right-next"
-       href="applications/index.html"
+       href="blog/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Applications</p>
+        <p class="prev-next-title">OpenLambda Blog</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
