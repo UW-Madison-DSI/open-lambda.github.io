@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://open-lambda.github.io/</id>
   <title>OpenLambda Blog</title>
-  <updated>2026-05-18T20:49:10.778644+00:00</updated>
+  <updated>2026-05-18T21:40:18.234517+00:00</updated>
   <link href="https://open-lambda.github.io/"/>
   <link href="https://open-lambda.github.io/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.12">ABlog</generator>
@@ -40,6 +40,48 @@ notes, performance experiments, and design discussions.&lt;/p&gt;
     <summary>Welcome to the new OpenLambda blog. We’ll use this space to share release
 notes, performance experiments, and design discussions.</summary>
     <category term="announcement" label="announcement"/>
+    <category term="openlambda" label="openlambda"/>
+    <published>2026-05-18T00:00:00-05:00</published>
+  </entry>
+  <entry>
+    <id>https://open-lambda.github.io/blog/post/2026-05-18-ag-forecasting-case-study.html</id>
+    <title>An Application Case Study: Forecasting Crop Disease with OpenLambda</title>
+    <updated>2026-05-18T00:00:00-05:00</updated>
+    <author>
+      <name>Tyler Caraza-Harter</name>
+    </author>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;em&gt;Maria Oros, Data Science Institute, University of Wisconsin–Madison&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Tyler Caraza-Harter, Department of Computer Sciences, University of Wisconsin–Madison&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Our goal is to make an ever-growing set of applications deployable on OpenLambda (OL), with minimal modifications. We believe the best way to work towards this goal is to pick interesting applications that weren’t originally designed for serverless deployment, try to port them to OL, and identify pain points. This helps us identify the most useful features to add to OL, to support similar deployments.&lt;/p&gt;
+&lt;/p&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</content>
+    <link href="https://open-lambda.github.io/blog/post/2026-05-18-ag-forecasting-case-study.html"/>
+    <summary>Maria Oros, Data Science Institute, University of Wisconsin–Madison&lt;br /&gt;
+\\
+Tyler Caraza-Harter, Department of Computer Sciences, University of Wisconsin–MadisonOur goal is to make an ever-growing set of applications deployable on OpenLambda (OL), with minimal modifications. We believe the best way to work towards this goal is to pick interesting applications that weren’t originally designed for serverless deployment, try to port them to OL, and identify pain points. This helps us identify the most useful features to add to OL, to support similar deployments.</summary>
+    <category term="agforecast" label="agforecast"/>
+    <category term="asgi" label="asgi"/>
+    <category term="case-study" label="case-study"/>
+    <category term="fastapi" label="fastapi"/>
     <category term="openlambda" label="openlambda"/>
     <published>2026-05-18T00:00:00-05:00</published>
   </entry>

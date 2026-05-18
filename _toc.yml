@@ -12,4 +12,5 @@ chapters:
   - file: blog/index
     title: Blog
     sections:
-      - glob: blog/posts/*
+      - file: blog/post/2026-05-18-hello-world
+      - file: blog/post/2026-05-18-agforecast-case-study
