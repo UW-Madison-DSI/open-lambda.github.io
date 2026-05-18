@@ -32,10 +32,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install 'jupyter-book<2.0'
-          pip install sphinx-book-theme
+        run: pip install -r requirements.txt
 
       - name: Build Jupyter Book
         run: jupyter-book build .
