@@ -60,6 +60,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'blog/index';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Hello, OpenLambda Blog" href="post/2026-05-18-hello-world.html" />
     <link rel="prev" title="Agricultural Forecasting API" href="../applications/ag-forecasting-api.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/> 
@@ -155,6 +156,12 @@
       </a>
     </li>
     
+    <li>
+      <a href="post/2026-05-18-ag-forecasting-case-study.html">
+        18 May - An Application Case Study: Forecasting Crop Disease with OpenLambda
+      </a>
+    </li>
+    
   </ul>
 </div>
 </div>
@@ -168,11 +175,27 @@
   <h3><a href="tag.html">Tags</a></h3>
   <ul class="ablog-cloud">
      
-    <li class="ablog-cloud ablog-cloud-3">
+    <li class="ablog-cloud ablog-cloud-1">
+      <a href="tag/agforecast.html">agforecast</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-1">
       <a href="tag/announcement.html">announcement</a>
     </li>
       
-    <li class="ablog-cloud ablog-cloud-3">
+    <li class="ablog-cloud ablog-cloud-1">
+      <a href="tag/asgi.html">asgi</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-1">
+      <a href="tag/case-study.html">case-study</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-1">
+      <a href="tag/fastapi.html">fastapi</a>
+    </li>
+      
+    <li class="ablog-cloud ablog-cloud-5">
       <a href="tag/openlambda.html">openlambda</a>
     </li>
      
@@ -186,6 +209,10 @@
   </h3>
   <ul>
      
+    <li>
+      <a href="category/case-studies.html">Case Studies (1)</a>
+    </li>
+      
     <li>
       <a href="category/releases.html">Releases (1)</a>
     </li>
@@ -201,7 +228,7 @@
   <ul>
      
     <li>
-      <a href="2026.html">2026 (1)</a>
+      <a href="2026.html">2026 (2)</a>
     </li>
      
   </ul>
@@ -355,6 +382,49 @@ document.write(`
 <h1>OpenLambda Blog<a class="headerlink" href="#openlambda-blog" title="Link to this heading">#</a></h1>
 <p>News, releases, and technical deep-dives from the OpenLambda project.</p>
 <ul class="postlist-style-circle postlist">
+<li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="post/2026-05-18-ag-forecasting-case-study.html">An Application Case Study: Forecasting Crop Disease with OpenLambda</a> — <a class="reference internal" href="author/maria-oros.html" title="Maria Oros"><em>Maria Oros</em></a>, <a class="reference internal" href="author/tyler-caraza-harter.html" title="Tyler Caraza-Harter"><em>Tyler Caraza-Harter</em></a>, May 18, 2026</p>
+<p class="ablog-post-excerpt"><em>Maria Oros, Data Science Institute, University of Wisconsin–Madison</em><br />
+<em>Tyler Caraza-Harter, Department of Computer Sciences, University of Wisconsin–Madison</em>
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./blog"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script></p>
+<p class="ablog-post-excerpt">Our goal is to make an ever-growing set of applications deployable on OpenLambda (OL), with minimal modifications. We believe the best way to work towards this goal is to pick interesting applications that weren’t originally designed for serverless deployment, try to port them to OL, and identify pain points. This helps us identify the most useful features to add to OL, to support similar deployments.
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./blog"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script></p>
+</li>
 <li class="ablog-post"><p class="ablog-post-title"><a class="reference internal" href="post/2026-05-18-hello-world.html">Hello, OpenLambda Blog</a> — <a class="reference internal" href="author/openlambda-team.html" title="OpenLambda Team"><em>OpenLambda Team</em></a>, May 18, 2026</p>
 <p class="ablog-post-excerpt">Welcome to the new OpenLambda blog. We’ll use this space to share release
 notes, performance experiments, and design discussions.
@@ -424,6 +494,15 @@ notes, performance experiments, and design discussions.
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">Agricultural Forecasting API</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="post/2026-05-18-hello-world.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Hello, OpenLambda Blog</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
